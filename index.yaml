@@ -4799,6 +4799,31 @@ entries:
       name: Yann-J
     name: mautic
     sources:
+    - https://github.com/sugui/oaf-public-charts/tree/main/charts/mautic
+    urls:
+    - https://github.com/sugui/sugui/releases/download/mautic-0.1.8/mautic-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
+    appVersion: v4-apache
+    created: "2024-01-16T10:04:44.47800376Z"
+    dependencies:
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: ~11.4.6
+    description: A Helm chart for Mautic, a marketing automation tool
+    digest: ea8e88cfb8640f030344d9ab138712786358c3b0cdcdb01e632bbc4d5d2f35a3
+    home: https://www.mautic.org/
+    icon: https://secure.gravatar.com/avatar/a946d764bc1e4a7a39664099febfc9b2.png?s=400
+    keywords:
+    - marketing
+    - mautic
+    - crm
+    maintainers:
+    - email: yann.jouanique@gmail.com
+      name: Yann-J
+    name: mautic
+    sources:
     - https://github.com/one-acre-fund/oaf-public-charts/tree/main/charts/mautic
     urls:
     - https://github.com/one-acre-fund/oaf-public-charts/releases/download/mautic-0.1.5/mautic-0.1.5.tgz
