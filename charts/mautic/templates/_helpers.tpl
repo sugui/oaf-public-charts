@@ -48,7 +48,7 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 # TODO: support external db
 {{- define "db_host" -}}
 {{- if .Values.mariadb.primary.service.host -}} 
-  {{ .Values.mariadb.primary.service.host | default "mautic-mariadb:3306" }}
+  {{ .Values.mariadb.primary.service.host | default "mautic-mariadb" }}:{{ .Values.mariadb.primary.service.ports.mysql | default "3306" }}
 {{- else -}}
   {{ include "mautic.fullname" . }}-mariadb:{{ .Values.mariadb.primary.service.ports.mysql | default "3306" }}
 {{- end -}}
