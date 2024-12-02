@@ -10,7 +10,7 @@ keywords:
   - mautic
   - crm
 sources:
-  - https://github.com/one-acre-fund/oaf-public-charts/tree/main/charts/mautic
+  - https://github.com/sugui/oaf-public-charts/tree/main/charts/mautic
 maintainers:
   - name: Yann-J
     email: yann.jouanique@gmail.com
