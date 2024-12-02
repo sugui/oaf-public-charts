@@ -4801,7 +4801,7 @@ entries:
     sources:
     - https://github.com/sugui/oaf-public-charts/tree/main/charts/mautic
     urls:
-    - https://github.com/sugui/oaf-public-charts/releases/download/v0.1.8/mautic-0.1.8.tgz
+    - https://github.com/sugui/oaf-public-charts/releases/download/v0.1.8/mautic-0.1.8.tar
     version: 0.1.8
   - apiVersion: v2
     appVersion: v4-apache
