@@ -24,16 +24,16 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-     # initContainers:
+      initContainers:
         # Wait for DB
-     #   - name: wait-db
-      #    image: jwilder/dockerize
+        - name: wait-db
+          image: jwilder/dockerize:0.6.1
           # We don't care about having latest...
-       #   imagePullPolicy: IfNotPresent
-        #  command:
-         #   - sh
-         #   - -c
-         #   - dockerize -timeout=120s -wait tcp://{{ include "db_host" .}}
+          imagePullPolicy: IfNotPresent
+          command:
+            - sh
+            - -c
+            - dockerize -timeout=120s -wait tcp://{{ include "db_host" .}}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
